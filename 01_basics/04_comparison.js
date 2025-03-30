@@ -16,7 +16,7 @@ console.log(undefined == 0);
 console.log(undefined < 0);
 console.log(undefined > 0);
 
-/// === : strict check ; values he nahi balki datatype bhi check krta hai
+/// === : strict check ; values he nahi par datatype bhi check krta hai
 
 console.log("2" === 2);
 console.log("2" == 2); //true de dega kyuki == type change krke check kr leta hai, par === strictly check krta hai
