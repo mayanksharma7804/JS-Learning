@@ -9,17 +9,26 @@ console.log(myDate.toJSON());
 console.log(myDate.toLocaleDateString());
 console.log(myDate.toLocaleTimeString());
 console.log(myDate.toLocaleString());
-
 console.log(typeof myDate);
+
+
+// different date formats :
 let myCreatedDate = new Date(2023, 0, 23); //yyyy, mm, dd
 console.log(myCreatedDate.toDateString());
 
-let newDate = new Date("2023-01-14") ;
+let newDate = new Date("2023-01-14");
 console.log(newDate.toDateString());
 
-let datee = new Date("08-07-2004") ; //mm-dd-yyyy
+let datee = new Date("08-07-2004"); //mm-dd-yyyy
 console.log(datee.toDateString());
 
-let myTimeStamp = Date.now()
-console.log(myTimeStamp) ; 
-console.log(myCreatedDate.getTime()) ;
+//TimeStamp
+let myTimeStamp = Date.now();
+console.log(myTimeStamp); //miliseconds from January 1, 1970
+console.log(myCreatedDate.getTime());
+console.log(Math.floor(Date.now()/1000)); //to convert ms in seconds
+
+let hahaDate = new Date()
+console.log(hahaDate);
+console.log(hahaDate.getMonth());
+console.log(hahaDate.getDay());
