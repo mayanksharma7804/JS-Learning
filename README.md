@@ -1,1 +1,1 @@
-Learning Github from the basics.
+Learning JavaScript.
