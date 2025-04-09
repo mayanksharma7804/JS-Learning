@@ -38,7 +38,46 @@ function loginUserMessage(username = "sam") {
   return `${username} just logged in.`;
 }
 
-// console.log(loginUserMessage("Mayank"));
-console.log(loginUserMessage(/*write username*/));
+// console.log(loginUserMessage(/*write username*/));
 
 // username = "sam" makes sam the default value, so if a user does not pass any argument while calling the function, then Sam will be taken as username. And if a user passes a name, then that will be used.
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+
+function calculateCartPrice(...num1) {
+  return num1;
+}
+// console.log(calculateCartPrice(200, 400, 500, 2000)); //no matter how many arguments we pass now, as we have used the rest operator i.e. ...num1
+//
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+function calculateCartPrice(val1, val2, ...num1) {
+  return num1;
+}
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+
+const user = {
+  username: "Mayank",
+  price: "999",
+};
+function handleObject(anyobject) {
+  console.log(
+    `Username is ${anyobject.username} and the price is ${anyobject.price}`
+  );
+}
+// handleObject(user); //or
+// handleObject ({
+//     username : "Mayank",
+//     price : "998"
+// })
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++
+
+const myNewArray = [200, 400, 600, 100];
+function returnSecondValue(getArray) {
+  return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
