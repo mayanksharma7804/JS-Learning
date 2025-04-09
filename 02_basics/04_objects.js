@@ -66,3 +66,16 @@ const course = {
 const { courseInstructor } = course;
 console.log(courseInstructor);
 
+// {
+//     "name" : "Mayank",
+//     "courseName" : "JS in Hindi",
+//     "PriceName" : "Free"
+// }
+
+[
+    {},
+    {},
+    {}, //api in array format
+    {}
+]
+
