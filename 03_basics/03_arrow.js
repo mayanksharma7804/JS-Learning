@@ -55,6 +55,15 @@ const user = {
 
 // const addtwo = (n1, n2) => n1 + n2
 // OR
-const addtwo = (n1, n2) => n1 + n2;
-
+const addtwo = (n1, n2) => ({ username: "Mayank" });
+//parenthesis lagane he pdenge, agar return nahi likhna to
 console.log(addtwo(2, 4));
+
+// ++++++++++++++++++++++++++++++++++++++++
+
+const myArray = [2, 5, 7, 8, 4, 6];
+
+myArray.forEach(function () {});
+myArray.forEach(() => {});
+// myArray.forEach(() => ());
+//all three above are correct syntax used.
