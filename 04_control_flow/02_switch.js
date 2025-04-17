@@ -10,7 +10,7 @@
 
 // ++++++++++++++++++++++++++++++++++++++++++++
 
-const month = 3
+const month = 3 //in place of 3, if there would have been "jan", then later would be case "jan": 
 
 switch (month) {
     case 1:
